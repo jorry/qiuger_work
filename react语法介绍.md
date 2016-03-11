@@ -23,3 +23,18 @@
             }}
           >http://gank.io</Text>
 6.页面切换
+
+7. flux 和函数式编程
+
+8. 网络请求
+[http://facebook.github.io/react-native/docs/network.html#content](http://facebook.github.io/react-native/docs/network.html#content "Fetch-API") 
+
+		fetchData: function(){
+			fetch(urlPath).then((response) => response.json()).then((responseText) => {
+				console.log(responseText.cutList);
+				this.cache(responseText.cutList);	
+			})
+			.catch((error) => {
+				console.log(error)
+			})
+		}
